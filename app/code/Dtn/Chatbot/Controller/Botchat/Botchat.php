@@ -11,7 +11,7 @@ use OpenAI;
 
 class Botchat extends Action
 {
-    const OPENAI_KEY = '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';
+    const OPENAI_KEY = 'abcxyz';
     protected $jsonFactory;
     protected $botman;
     protected $openai;
