@@ -11,6 +11,7 @@ use OpenAI;
 
 class Botchat extends Action
 {
+    const OPENAI_KEY = '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';
     protected $jsonFactory;
     protected $botman;
     protected $openai;
@@ -19,7 +20,7 @@ class Botchat extends Action
     {
         parent::__construct($context);
         $this->jsonFactory = $jsonFactory;
-        $this->openai = OpenAI::client('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');
+        $this->openai = OpenAI::client(self::OPENAI_KEY);
         $config = [
             'web' => [
                 'matchingData' => [
